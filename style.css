@@ -1,0 +1,79 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(20, 0, 0);
+
+}
+
+
+.container {
+    position: relative;
+    display:flexbox;
+    width: 980px;
+    height: 280px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+}
+
+button{
+    height: 70px;
+    border-radius: 15px;
+    border-style:double;
+    background-color: black;
+    margin: 3px;
+    border-color: rgb(255, 0, 0);
+    color: rgb(77, 0, 0);
+    font-family: "Comfortaa";
+    font-size: 25px;
+}
+
+#pink:active,
+#orange:active,
+#orangered:active,
+#smugl:active,
+#low-green:active{ 
+    background-color: black;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.spec_1{
+    width: 87px;
+}
+.spec_2{
+    width: 109px;
+}
+
+
+.num{
+    width: 62px;
+}
+
+.char{
+    width: 62px;
+}
+
+.shift{
+    width: 144px;
+}
+
+#pink{
+    background-color: rgb(255, 0, 38);
+}
+#smugl{
+    background-color: rgb(255, 0, 123);
+}
+#orangered{
+    background-color: rgb(255, 68, 0);
+}
+#orange{
+    background-color: rgb(255, 166, 0);
+}
+#low-green{
+    background-color: rgb(157, 255, 0);
+}
