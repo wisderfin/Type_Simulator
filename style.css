@@ -23,13 +23,19 @@ body {
 button{
     height: 70px;
     border-radius: 15px;
-    border-style:double;
+    border-style: none;
     background-color: black;
     margin: 3px;
-    border-color: rgb(255, 0, 0);
-    color: rgb(77, 0, 0);
+    border-color: rgb(245, 243, 243);
+    color: #241411;
     font-family: "Comfortaa";
     font-size: 25px;
+    -webkit-text-stroke: 1.5px #241411;
+    transition: transform 0.2s ease-in-out;
+}
+
+button.scale-up {
+    transform: scale(0.8);
 }
 
 #pink:active,
@@ -37,7 +43,7 @@ button{
 #orangered:active,
 #smugl:active,
 #low-green:active{ 
-    background-color: black;
+    background-color:rgb(20, 0, 0);
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
 }
@@ -63,17 +69,17 @@ button{
 }
 
 #pink{
-    background-color: rgb(255, 0, 38);
+    background-color: #30333a;
 }
 #smugl{
-    background-color: rgb(255, 0, 123);
+    background-color: #72676f;
 }
 #orangered{
-    background-color: rgb(255, 68, 0);
+    background-color: #9a8d96;
 }
 #orange{
-    background-color: rgb(255, 166, 0);
+    background-color: #b0a6a7;
 }
 #low-green{
-    background-color: rgb(157, 255, 0);
+    background-color: #b79d9b;
 }
