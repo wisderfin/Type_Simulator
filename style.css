@@ -1,6 +1,6 @@
 html {
     width: 99%;
-    height: 99%;
+    height: 95%;
 }
 body {
     width: 100%;
@@ -49,23 +49,23 @@ button.scale-up {
 }
 
 .spec_1{
-    width: 87px;
+    width: 3.5em;
 }
 .spec_2{
-    width: 109px;
+    width: 4.4em;
 }
 
 
 .num{
-    width: 62px;
+    width: 2.48em;
 }
 
 .char{
-    width: 62px;
+    width: 2.48em;
 }
 
 .shift{
-    width: 144px;
+    width: 5.75em;
 }
 
 #pink{
@@ -86,10 +86,10 @@ button.scale-up {
 
 .char_activ{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 1em;
+    height: 1em;
     margin-left: 50%;
-    margin-top: 200px;
+    margin-top: -2em;
     padding-bottom: 20px;
     padding-top: 20px;
     transform: translateX(-50%);

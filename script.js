@@ -64,37 +64,60 @@ function randChar(){
 }
 
 
-function dinamic(name = randChar()){
-    const but = document.getElementsByName(name)[0];
+// function dinamic(name = randChar()){
+    // const but = document.getElementsByName(name)[0];
+    // but.classList.toggle('scale-up');
+
+
+    // function clicked(){
+    //         but.classList.remove('scale-up')
+    //         but.removeEventListener('keydown', key_click)
+    //         but.removeEventListener('click', clicked)
+    //         name =randChar()
+    //     }
+        
+    //     function key_click(event){
+    //         if (event.key.toUpperCase() == name){
+    //             properly+=1;
+    //             but.click()
+    //             console.log(true);
+    //         }
+    //         else if(event.key.toUpperCase() != name) {
+    //             error+=1;
+    //             console.log(false);
+    //         pretision.textContent = error;
+    //         console.log(error, properly, error+properly, properly/(error+properly))
+    //     }
+        
+    // }
+    
+    // document.addEventListener('keydown', key_click)
+    // but.addEventListener("click", clicked)
+    // }
+
+
+
+function dinamic(name){
+    const but = document.getElementsByName(name)[0]
     but.classList.toggle('scale-up');
 
-
-    function clicked(){
-            but.classList.remove('scale-up')
-            but.removeEventListener('keydown', key_click)
-            but.removeEventListener('click', clicked)
-            pretision.textContent = `Точность: ${(properly/(error+properly))*100}`;
-            console.log(error, properly, error+properly, properly/(error+properly))
-            dinamic(randChar())
-        }
-        
     function key_click(event){
+        but.removeEventListener('keydown', key_click)
+        
         if (event.key.toUpperCase() == name){
             properly+=1;
+            name = randChar()
+            but.classList.remove('scale-up')
             but.click()
-            console.log(true);
-        }
-        else if(event.key.toUpperCase() != name) {
-            error+=1;
-            console.log(false);
-        }
+            }
+            else if(event.key.toUpperCase() != name) {
+                error+=1;}
+            pretision.textContent = `Точность: ${Math.floor(properly/(error+properly)*100)}%`;
         
     }
-    
-    document.addEventListener('keydown', key_click)
-    but.addEventListener("click", clicked)
-    }
 
+    document.addEventListener('keydown', key_click)
+}
 
 create_button(list_button);
-dinamic();
+dinamic(randChar());
