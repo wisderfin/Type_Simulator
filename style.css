@@ -79,7 +79,20 @@ button.scale-up {
 }
 #orange{
     background-color: #b0a6a7;
-}
+} 
 #low-green{
     background-color: #b79d9b;
+}
+
+.char_activ{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-left: 50%;
+    margin-top: 200px;
+    transform: translateX(-50%);
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Comfortaa';
+    color: #b0a6a7;
 }

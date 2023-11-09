@@ -1,4 +1,5 @@
 const container = document.querySelector('.container');
+const char_active = document.querySelector('.char_activ');
 const list_button =  [
     "Esc", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0","-", "=", "Back",
     "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",
@@ -54,6 +55,7 @@ function create_button(list_button){
 function randChar(){
     let randomIndex = Math.floor(Math.random() * list_char.length);
     let randomValue = list_char[randomIndex];
+    char_active.textContent = randomValue;
     return randomValue;
 }
 
@@ -74,7 +76,7 @@ function dinamic(name = randChar()){
         if (event.key .toUpperCase() == name){
             but.click()
         }
-     }
+    }
     document.addEventListener('keydown', key_click)
     but.addEventListener("click", clicked)
     }
