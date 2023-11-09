@@ -1,5 +1,6 @@
 const container = document.querySelector('.container');
 const char_active = document.querySelector('.char_activ');
+const pretision = document.querySelector('.pretision');
 const list_button =  [
     "Esc", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0","-", "=", "Back",
     "Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "[", "]", "\\",
@@ -16,6 +17,9 @@ const smugl = ["2", "W", "S", "X","9","O","L","."];
 const orangered= ["3", "E", "D", "C","8","I","K",","];
 const orange= ["4", "R", "F", "V","7","U","J","M"];
 const low_green= ["5", "T", "G", "B","6","Y","H","N"];
+
+let properly = 0;
+let error = 0;
 
 
 function create_button(list_button){
@@ -69,14 +73,24 @@ function dinamic(name = randChar()){
             but.classList.remove('scale-up')
             but.removeEventListener('keydown', key_click)
             but.removeEventListener('click', clicked)
+            pretision.textContent = `Точность: ${(properly/(error+properly))*100}`;
+            console.log(error, properly, error+properly, properly/(error+properly))
             dinamic(randChar())
         }
         
     function key_click(event){
-        if (event.key .toUpperCase() == name){
+        if (event.key.toUpperCase() == name){
+            properly+=1;
             but.click()
+            console.log(true);
         }
+        else if(event.key.toUpperCase() != name) {
+            error+=1;
+            console.log(false);
+        }
+        
     }
+    
     document.addEventListener('keydown', key_click)
     but.addEventListener("click", clicked)
     }
