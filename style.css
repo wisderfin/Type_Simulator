@@ -13,7 +13,6 @@ body {
     overflow: hidden;
 }
 
-
 .container {
     position: relative;
     display: flexbox;
@@ -38,7 +37,12 @@ button {
 }
 
 button.scale-up {
-    transform: scale(0.8);
+    transform: scale(0.85);
+
+}
+
+button:focus {
+    outline: none;
 }
 
 #pink:active,
