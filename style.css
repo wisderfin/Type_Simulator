@@ -99,6 +99,8 @@ button.scale-up {
     margin-left: 50%;
     margin-top: -2em;
     padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
     transform: translateX(-50%);
     font-size: 100px;
     text-align: center;
