@@ -1,7 +1,11 @@
 html {
     width: 99%;
     height: 95%;
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
+
 body {
     width: 100%;
     height: 100%;
@@ -12,7 +16,7 @@ body {
 
 .container {
     position: relative;
-    display:flexbox;
+    display: flexbox;
     width: 980px;
     height: 280px;
     top: 50%;
@@ -20,7 +24,7 @@ body {
     margin: 0 auto;
 }
 
-button{
+button {
     height: 70px;
     border-radius: 15px;
     border-style: none;
@@ -28,7 +32,6 @@ button{
     margin: 3px;
     border-color: rgb(245, 243, 243);
     color: #241411;
-    font-family: "Comfortaa";
     font-size: 25px;
     -webkit-text-stroke: 1.5px #241411;
     transition: transform 0.2s ease-in-out;
@@ -42,70 +45,72 @@ button.scale-up {
 #orange:active,
 #orangered:active,
 #smugl:active,
-#low-green:active{ 
-    background-color:rgb(20, 0, 0);
+#low-green:active {
+    background-color: rgb(20, 0, 0);
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
 }
 
-.spec_1{
+.spec_1 {
     width: 3.5em;
 }
-.spec_2{
+
+.spec_2 {
     width: 4.4em;
 }
 
 
-.num{
+.num {
     width: 2.48em;
 }
 
-.char{
+.char {
     width: 2.48em;
 }
 
-.shift{
+.shift {
     width: 5.75em;
 }
 
-#pink{
+#pink {
     background-color: #30333a;
 }
-#smugl{
+
+#smugl {
     background-color: #72676f;
 }
-#orangered{
+
+#orangered {
     background-color: #9a8d96;
 }
-#orange{
+
+#orange {
     background-color: #b0a6a7;
-} 
-#low-green{
+}
+
+#low-green {
     background-color: #b79d9b;
 }
 
-.char_activ{
+.char_activ {
     position: absolute;
     width: 1em;
     height: 1em;
     margin-left: 50%;
     margin-top: -2em;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 50px;
     transform: translateX(-50%);
     font-size: 100px;
     text-align: center;
-    font-family: 'Comfortaa';
     border: 3px solid #9a8d96;
     border-radius: 20px;
     color: #9a8d96;
 }
 
-.stat{
+.stat {
     width: 500px;
     height: 100px;
     margin-left: 10px;
     color: #9a8d96;
-    font-family: 'Comfortaa';
     font-size: 30px;
 }
