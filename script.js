@@ -69,18 +69,21 @@ function dinamic(name){
     but.classList.toggle('scale-up');
 
     function key_click(event){
-        but.removeEventListener('keydown', key_click)
-        
+        document.removeEventListener('keydown', key_click);
+
         if (event.key.toUpperCase() == name){
             properly+=1;
-            name = randChar()
-            but.classList.remove('scale-up')
             but.click()
+            but.classList.remove('scale-up')
+            dinamic(randChar())
             }
             else if(event.key.toUpperCase() != name) {
-                error+=1;}
+                error+=1;
+                but.classList.remove('scale-up')
+                dinamic(name);
+            }
             pretision.textContent = `Точность: ${Math.floor(properly/(error+properly)*100)}%`;
-        
+
     }
 
     document.addEventListener('keydown', key_click)
